@@ -1,0 +1,16 @@
+package com.in28minutes.microservices;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import lombok.extern.log4j.Log4j2;
+
+@Log4j2
+public class CurrencyConversionController {
+
+	@GetMapping
+	public ExchangeValue getExchangeValue(@PathVariable String from, @PathVariable String to, @PathVariable String quantity) {
+		
+		return null;
+	}
+}

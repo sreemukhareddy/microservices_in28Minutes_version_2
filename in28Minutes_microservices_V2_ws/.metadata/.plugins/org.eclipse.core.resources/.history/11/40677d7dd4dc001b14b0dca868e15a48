@@ -1,0 +1,23 @@
+package com.in28minutes.microservices;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.http.client.SimpleClientHttpRequestFactory;
+import org.springframework.web.client.RestTemplate;
+
+@SpringBootApplication
+public class CurrencyConversionServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CurrencyConversionServiceApplication.class, args);
+	}
+	
+	@Bean
+	public RestTemplate getRestTemplate() {
+		RestTemplate restTemplate = new RestTemplate();
+    	((SimpleClientHttpRequestFactory)restTemplate.getRequestFactory()).setConnectTimeout(3000);
+    	return restTemplate;
+	}
+
+}
