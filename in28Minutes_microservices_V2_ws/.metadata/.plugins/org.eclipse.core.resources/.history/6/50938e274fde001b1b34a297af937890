@@ -1,0 +1,22 @@
+package com.in28minutes.microservices;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringCloudApiGatewayApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringCloudApiGatewayApplication.class, args);
+	}
+	
+	public List test() {
+		var num = new Object();
+		num = new ArrayList();
+		return num;
+	}
+
+}
