@@ -1,0 +1,6 @@
+spring.application.name=currency-exchange-service
+server.port=8000
+spring.config.import=configserver:http://localhost:8888
+spring.cloud.config.profile=qa
+spring.jpa.open-in-view=false
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka

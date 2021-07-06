@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\java_spring\in28Minutes_microservices_V2\spring-cloud-api-gateway"/>
+			<item value="D:\java_spring\in28Minutes_microservices_V2\eureka-naming-server"/>
 			<item value="D:\java_spring\in28Minutes_microservices_V2\currency-conversion-service"/>
 			<item value="D:\java_spring\in28Minutes_microservices_V2\currency-exchange-service"/>
 			<item value="D:\java_spring\in28Minutes_microservices_V2\spring-cloud-config-server"/>

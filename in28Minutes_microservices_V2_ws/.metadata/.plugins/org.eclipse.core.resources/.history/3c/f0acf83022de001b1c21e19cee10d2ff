@@ -1,0 +1,16 @@
+package com.in28minutes.microservices;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.github.resilience4j.retry.annotation.Retry;
+
+@RestController
+public class CircuitBreakerController {
+
+	@GetMapping("/sample-api")
+	@Retry(name = "default")
+	public String sample() {
+		return "Sample API";
+	}
+}
